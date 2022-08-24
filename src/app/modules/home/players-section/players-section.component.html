@@ -1,4 +1,10 @@
 <section>
   <h2 class="color-secondary">Conheça as brabas</h2>
-    <app-players-card></app-players-card>
+    <div class="carousel">
+      <button class="arrow" (click)="onPreviousPlayer()">&lt;</button>
+      <div class="cards" *ngFor="let player of playersCarousel">
+        <app-players-card [player]="player"></app-players-card>
+      </div>
+      <button class="arrow" (click)="onNextPlayer()">&gt;</button>
+    </div>
 </section>

@@ -16,5 +16,36 @@ section {
 
   h2 {
     text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cards {
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+
+      app-players-card:first-child {
+        transform: scale(0.85);
+      }
+
+      app-players-card:last-child {
+        transform: scale(0.85);
+      }
+    }
+
+    .arrow {
+      height: max-content;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 60px;
+      color: var(--color-secondary);
+    }
   }
 }

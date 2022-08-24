@@ -7,10 +7,10 @@
   <div class="card">
     <div
       class="card-img"
-      style="background-image: url(https://pbs.twimg.com/media/FHy7zkkXwAYF_Hu.jpg)"
+      [style]="'background-image: url(' + player.image + ')'"
     ></div>
     <div class="card-description">
-      <span class="fts-button">Gabi Zanotti</span>
+      <span class="fts-button">{{ player.name }}</span>
     </div>
   </div>
 </div>

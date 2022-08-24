@@ -1,0 +1,20 @@
+section {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  backdrop-filter: blur(2px);
+  background:
+    linear-gradient(180deg,var(--color-primary-light) 30%, var(--color-primary-dark) 80%),
+    url("https://i.pinimg.com/originals/16/ca/d1/16cad127557217a702a21a1b8eac9647.jpg") no-repeat center center;
+
+  background-image: url("https://i.pinimg.com/originals/16/ca/d1/16cad127557217a702a21a1b8eac9647.jpg") no-repeat center bottom; /* fallback */
+  background-image: linear-gradient(to bottom, rgba(83, 46, 152,0.7) 0%,rgba(0, 0, 62, 1) 100%), url("https://i.pinimg.com/originals/16/ca/d1/16cad127557217a702a21a1b8eac9647.jpg");
+  background-size: cover;
+
+
+  h2 {
+    text-transform: uppercase;
+  }
+}

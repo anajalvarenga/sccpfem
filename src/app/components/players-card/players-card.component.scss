@@ -1,0 +1,60 @@
+.card {
+  position: relative;
+  clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 8%, 89% 7%, 80% 0, 20% 0, 11% 7%, 0 8%);
+  height: 400px;
+  width: 300px;
+  background-color: var(--color-secondary-dark);
+
+  &::after {
+    content: "RESPEITA AS MINA";
+    position: absolute;
+    top: 40px;
+    left: 8px;
+    z-index: -1;
+
+    font-size: 4.5rem;
+    color: var(--color-primary-dark);
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .card-img {
+    clip-path: polygon(0 100%, 100% 100%, 100% 8%, 89% 7%, 80% 0, 20% 0, 11% 7%, 0 8%);
+    height: 280px;
+    width: 300px;
+    background-size: cover;
+  }
+
+  .card-description {
+    clip-path: polygon(0 50%, 50% 100%, 100% 50%, 100% 0, 0 0);
+    background-color: var(--color-secondary);
+    height: 120px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    span {
+      color: var(--color-primary-dark);
+      margin-bottom: 60px;
+      text-transform: uppercase;
+      font-size: 32px;
+
+      &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: auto;
+        background-color: var(--color-primary-dark);
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+.card-shadow {
+  &:hover {
+    filter: drop-shadow(0 0 15px var(--color-secondary));
+  }
+}

@@ -49,3 +49,9 @@ section {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  h2 {
+    padding: 0 16px;
+  }
+}

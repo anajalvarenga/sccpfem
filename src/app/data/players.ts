@@ -525,7 +525,7 @@ export const playersList: IPlayer[] = [
   {
     name: 'Gabi Zanotti',
     number: 10,
-    image: 'https://cdn.meutimao.com.br/_upload/jogador/gabriela-maria-zanotti-demoner-no-corinthians_q_corinthians.jpg',
+    image: 'https://pbs.twimg.com/media/FHy7zkkXwAYF_Hu.jpg',
     personalInformation: {
       fullName: 'Gabriela Maria Zanotti Demoner',
       position: 'meia',

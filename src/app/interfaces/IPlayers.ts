@@ -7,7 +7,7 @@ export interface IPlayer {
     position: string;
     birthDate: Date;
     age: number;
-    contract: Date;
+    contract?: Date;
   };
   statistics: {
     matches: number;

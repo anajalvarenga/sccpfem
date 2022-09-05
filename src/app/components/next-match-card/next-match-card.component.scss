@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 16px 32px;
+
+  transform: skewX(-10deg);
+  -o-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -webkit-transform: skewX(-10deg);
+
+  .team {
+    display: flex;
+    align-items: center;
+
+    transform: skewX(10deg);
+    -o-transform: skewX(10deg);
+    -moz-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+
+    img {
+      width: 80px;
+      // height: 80px;
+      margin: -16px 0;
+    }
+
+    h4 {
+      margin: 0;
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  span {
+    background-color: var(--color-primary);
+    color: var(--color-secondary-light);
+    font-weight: bold;
+    padding: 32px;
+    margin: -32px 32px;
+  }
+}

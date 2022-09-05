@@ -5,11 +5,13 @@ import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { PlayersSectionComponent } from './players-section/players-section.component';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { NextMatchesSectionComponent } from './next-matches-section/next-matches-section.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    PlayersSectionComponent
+    PlayersSectionComponent,
+    NextMatchesSectionComponent
   ],
   imports: [
     CommonModule,

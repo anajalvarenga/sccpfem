@@ -1,7 +1,15 @@
 section {
-  height: 650px;
+  height: max-content;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+
+  app-next-match-card {
+    margin-bottom: 50px;
+
+    &:first-of-type {
+      margin-top: 50px;
+    }
+  }
 }

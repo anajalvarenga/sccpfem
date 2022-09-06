@@ -13,3 +13,27 @@ section {
     }
   }
 }
+
+img {
+  position: absolute;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  z-index: -1;
+
+  &.img-left {
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50px);
+  }
+
+  &.img-right {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+<img *ngIf="matchData.stadium?.image" [src]="matchData.stadium?.image" alt="">
+<h3 class="color-primary uppercase">{{ matchData.home.name }} x {{ matchData.visitor.name }}</h3>
+<h5>{{ matchData.championship }}</h5>
+<p>{{ matchData.date | date: 'dd/MM | HH:mm' }}</p>
+<p class="uppercase">{{ matchData.stadium?.name }}</p>
+<ul>
+  <mat-icon>tv</mat-icon>
+  <li *ngFor="let st of matchData.streaming">{{ st }}</li>
+</ul>

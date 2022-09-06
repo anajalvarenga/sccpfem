@@ -1,6 +1,7 @@
 <section>
   <h2 class="color-primary">Próximas Partidas</h2>
-  <app-next-match-card></app-next-match-card>
-  <app-next-match-card></app-next-match-card>
-  <app-next-match-card></app-next-match-card>
+  <app-next-match-card
+    *ngFor="let match of matches"
+    [match]="match"
+  ></app-next-match-card>
 </section>

@@ -11,6 +11,7 @@
   -webkit-transform: skewX(-10deg);
 
   .team {
+    min-width: 212px;
     display: flex;
     align-items: center;
 
@@ -20,8 +21,8 @@
     -webkit-transform: skewX(10deg);
 
     img {
-      width: 80px;
-      margin: -16px 0;
+      width: 72px;
+      margin: -12px 4px;
     }
 
     h4 {

@@ -1,0 +1,7 @@
+<div class="card" *ngIf="title">
+  <img [src]="title.image" [alt]="title.name">
+  <div class="label">
+    <span>{{ title.amount }}</span>
+    {{ title.name }}
+  </div>
+</div>

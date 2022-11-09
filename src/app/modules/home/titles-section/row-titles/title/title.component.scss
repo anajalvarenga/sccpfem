@@ -1,0 +1,35 @@
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  img {
+    height: 300px;
+    object-fit: contain;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+
+    span {
+      background-color: var(--color-primary);
+      color: var(--color-secondary-light);
+      font-weight: bold;
+      padding: 24px;
+      margin: -32px 32px;
+      margin-left: 0;
+    }
+  }
+}

@@ -16,6 +16,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     .logo {
       filter: drop-shadow(0px 0px 40px var(--color-secondary));
@@ -23,6 +24,7 @@ section {
 
     .players-left, .players-right{
       filter: drop-shadow(0px 5px 40px var(--color-secondary));
+      margin: auto;
 
       img {
         height: 200px;
@@ -30,6 +32,16 @@ section {
         filter: drop-shadow(0px 5px 10px var(--color-secondary-dark));
         mask-image: linear-gradient(black 40%, transparent 100%);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .players {
+    transform: scale(0.75);
+
+    .players-left, .players-right {
+      display: none;
     }
   }
 }

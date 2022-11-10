@@ -1,13 +1,36 @@
 <section>
-    <h2 class="color-secondary">Conheça as brabas</h2>
-    <div class="carousel">
-        <button class="arrow" (click)="onPreviousPlayer()">&lt;</button>
-        <div class="cards">
-          <app-players-card
-              *ngFor="let player of playersCarousel"
-              [player]="player"
-          ></app-players-card>
+  <h2 class="color-white">Conheça as brabas</h2>
+  <div class="featured-player">
+    <img [src]="selectedPlayer.image" [alt]="selectedPlayer.name">
+    {{ selectedPlayer.name }}
+  </div>
+  <div class="carousel">
+    <button
+      type="button"
+      class="arrow left"
+      (click)="onPreviousPlayer()"
+    >&lt;</button>
+    <button
+      type="button"
+      class="arrow right"
+      (click)="onNextPlayer()"
+    >&gt;</button>
+    <div class="players-area">
+      <div
+        class="players"
+        [ngStyle]="{
+          'width': (playersCarousel.length * 200) + 'px',
+          'margin-left': scrollX + 'px'
+        }"
+      >
+        <div
+          class="player"
+          *ngFor="let player of playersCarousel"
+          (click)="onSelectPlayer(player)"
+        >
+          <img [src]="player.image" [alt]="player.name">
         </div>
-        <button class="arrow" (click)="onNextPlayer()">&gt;</button>
+      </div>
     </div>
+  </div>
 </section>

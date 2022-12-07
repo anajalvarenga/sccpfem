@@ -14,7 +14,7 @@ export class PlayersSectionComponent  {
   selectedPlayer = this.playersCarousel[0];
 
   onPreviousPlayer() {
-    let newScrollX = this.scrollX + Math.round(window.innerWidth / 4);
+    let newScrollX = this.scrollX + Math.round(window.innerWidth / 2);
     if(newScrollX > 0) {
         newScrollX = 0;
     }
@@ -22,7 +22,7 @@ export class PlayersSectionComponent  {
   }
 
   onNextPlayer() {
-    let newScrollX = this.scrollX - Math.round(window.innerWidth / 4);
+    let newScrollX = this.scrollX - Math.round(window.innerWidth / 2);
     console.log({newScrollX});
     if((window.innerWidth - this.listWidth) > newScrollX) {
         newScrollX = (window.innerWidth - this.listWidth) - 60;
